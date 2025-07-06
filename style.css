@@ -1,4 +1,3 @@
-/* Base styles */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -13,7 +12,6 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Subtle background pattern */
 body::before {
   content: "";
   position: absolute;
@@ -28,6 +26,10 @@ body::before {
   z-index: 2;
   width: 90%;
   max-width: 400px;
+}
+
+.quiz-header {
+  margin-top: 60px;
 }
 
 .quiz-header h1 {
@@ -45,7 +47,6 @@ body::before {
   margin: 0.5rem 0 2rem;
 }
 
-/* Theme toggle */
 .theme-toggle {
   position: absolute;
   top: 20px;
@@ -96,7 +97,6 @@ body::before {
   transform: translateX(25px);
 }
 
-/* Cards */
 .quiz-cards {
   display: flex;
   flex-direction: column;
@@ -133,7 +133,6 @@ body::before {
   font-size: 1rem;
 }
 
-/* Light theme */
 body.light {
   background: #F4F6FA;
   color: #313E51;
@@ -158,4 +157,19 @@ body.light .card {
 
 body.light .card:hover {
   background: #E4E9F2;
+}
+
+@media (max-width: 500px) {
+  .theme-toggle {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .quiz-header {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
