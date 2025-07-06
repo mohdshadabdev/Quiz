@@ -9,11 +9,7 @@
 </head>
 <body>
   <main class="quiz-container">
-    <div class="quiz-header">
-      <h1>Welcome to the <span>Frontend Quiz!</span></h1>
-      <p>Pick a subject to get started.</p>
-    </div>
-
+    <!-- ✅ Toggle moved INSIDE the container -->
     <label class="theme-toggle">
       <input type="checkbox" id="theme-switch">
       <div class="slider">
@@ -21,6 +17,11 @@
         <div class="icon moon">🌙</div>
       </div>
     </label>
+
+    <div class="quiz-header">
+      <h1>Welcome to the <span>Frontend Quiz!</span></h1>
+      <p>Pick a subject to get started.</p>
+    </div>
 
     <div class="quiz-cards">
       <button class="card">
